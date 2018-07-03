@@ -6,13 +6,38 @@
     "jsx": "react",
     "outDir": "compiled",
     "rootDir": "src",
-    "types": ["react", "react-native", "jest"]
+    "types": [
+      "react",
+      "react-native",
+      "jest"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false,
+    "preserveConstEnums": true,
+    "allowJs": false,
+    "sourceMap": true,
+    "noImplicitReturns": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true
   },
-  "include": ["src/**/*"],
+  "filesGlob": [
+    "typings/index.d.ts",
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "types": [
+    "react",
+    "react-native",
+    "jest"
+  ],
+  "include": [
+    "src/**/*"
+  ],
   "exclude": [
-	  "android",
-	  "ios",
-	  "compiled",
-	  "node_modules"
-   ]
+    "android",
+    "ios",
+    "compiled",
+    "node_modules"
+  ],
+  "compileOnSave": false
 }
